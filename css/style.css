@@ -1,0 +1,119 @@
+*{padding: 0;
+    margin:0;
+    box-sizing: border-box;}
+    #phlogo{
+        width: 20%;
+        margin-top: 15px;
+       
+        
+    }
+    #container{
+        width: 80%;
+      
+        margin: auto;
+    
+        
+    }
+    #logo{
+        width: 40%;
+       
+        float: left;
+    }
+    #nav{width: 60%;
+   
+    float: left;
+    list-style: none;
+    color: honeydew;
+text-align:right ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #header{
+    position: fixed;
+width: 100%;
+z-index: 10;}
+    /* عشان الهيدروالصوره و القايمه يبقوا منتظمين*/
+    .clear{
+        clear: both;
+    }
+ #nav > li > a{
+    text-decoration: none;
+    padding:30px 15px;
+    display:block;
+    color: whitesmoke;
+    font-size: 18px;
+    
+    }
+   #nav > li
+    {
+    display: inline-block;
+
+text-align: right;}
+    #home{
+        height: 100vh;
+        background-image:url(/images/background/background1.webp);
+    background-size:cover;
+    position: relative;
+    
+    }
+    .overlay{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+#home-content{
+  width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white ;
+    font-size: 2rem; 
+    line-height: 2;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+p{
+    margin: 10px 0px;
+    letter-spacing: 2px;}
+    #home button{
+        min-width:  160px;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        font-size: 20px;
+
+       
+    }
+    #learn{margin-left: 80px;
+    background-color: rgb(6, 215, 243);
+color: white;}
+button{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ;}
+    .opacity:hover {opacity: 0.8;}
+    .opacity{transition: opacity 0.5s;}
+    #nav > li > a:after {
+       width: 0%;
+
+      
+    }
+    #nav > li > a:hover:after{
+       width: 100%;
+       
+    }
+    #nav > li > a.active:after {
+       width: 100%;
+       }
+    #nav > li > a.active:after,
+    #nav > li > a:after{ 
+        content: "";
+        display: block;
+       height: 3px;
+        background-color:#6195ff ;
+      transition: width 0.5s;}
+
+      .dropdown{position: relative;}
+      .dropdown-menu{position: absolute;}
+      
